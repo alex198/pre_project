@@ -12,7 +12,7 @@ public class UserServiceImpl implements UserService {
         new UserDaoJDBCImpl().createUsersTable();
     }
 
-    public void dropUsersTable() {
+    public void dropUsersTable() throws SQLException {
         //add
         new UserDaoJDBCImpl().dropUsersTable();
     }
@@ -32,7 +32,7 @@ public class UserServiceImpl implements UserService {
         return new UserDaoJDBCImpl().getAllUsers();
     }
 
-    public void cleanUsersTable() {
+    public void cleanUsersTable() throws SQLException {
         new UserDaoJDBCImpl().cleanUsersTable();
     }
 }
