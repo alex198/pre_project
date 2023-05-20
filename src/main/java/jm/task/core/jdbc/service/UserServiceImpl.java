@@ -1,5 +1,6 @@
 package jm.task.core.jdbc.service;
 
+import jm.task.core.jdbc.dao.UserDaoHibernateImpl;
 import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
 import jm.task.core.jdbc.model.User;
 
@@ -9,30 +10,30 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
     public void createUsersTable() throws SQLException {
         //add
-        new UserDaoJDBCImpl().createUsersTable();
+        new UserDaoHibernateImpl().createUsersTable();
     }
 
     public void dropUsersTable() throws SQLException {
         //add
-        new UserDaoJDBCImpl().dropUsersTable();
+        new UserDaoHibernateImpl().dropUsersTable();
     }
 
     public void saveUser(String name, String lastName, byte age) throws SQLException {
         //add
-        new UserDaoJDBCImpl().saveUser(name, lastName, age);
+        new UserDaoHibernateImpl().saveUser(name, lastName, age);
     }
 
     public void removeUserById(long id) throws SQLException {
         //add
-        new UserDaoJDBCImpl().removeUserById(id);
+        new UserDaoHibernateImpl().removeUserById(id);
     }
 
     public List<User> getAllUsers() throws SQLException {
         //add
-        return new UserDaoJDBCImpl().getAllUsers();
+        return new UserDaoHibernateImpl().getAllUsers();
     }
 
     public void cleanUsersTable() throws SQLException {
-        new UserDaoJDBCImpl().cleanUsersTable();
+        new UserDaoHibernateImpl().cleanUsersTable();
     }
 }
