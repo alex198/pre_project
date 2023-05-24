@@ -1,5 +1,7 @@
-import koschei.KoscheiTheDeathless;
-import koschei.config.AppConfig;
+package spring_215;
+
+import spring_215.koschei.KoscheiTheDeathless;
+import spring_215.koschei.config.AppConfig;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

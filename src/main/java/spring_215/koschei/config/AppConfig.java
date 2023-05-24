@@ -1,13 +1,13 @@
-package koschei.config;
+package spring_215.koschei.config;
 
-import koschei.models.Island2;
-import koschei.models.Wood3;
+import spring_215.koschei.models.Island2;
+import spring_215.koschei.models.Wood3;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = "koschei")
+@ComponentScan(basePackages = "spring_215.koschei")
 public class AppConfig {
 
     @Bean

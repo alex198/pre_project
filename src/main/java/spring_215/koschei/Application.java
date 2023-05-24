@@ -1,6 +1,6 @@
-package koschei;
+package spring_215.koschei;
 
-import koschei.config.AppConfig;
+import spring_215.koschei.config.AppConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

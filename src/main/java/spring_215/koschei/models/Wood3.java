@@ -1,4 +1,4 @@
-package koschei.models;
+package spring_215.koschei.models;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
